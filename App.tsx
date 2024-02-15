@@ -1,19 +1,8 @@
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import useTheme from './src/hooks/useTheme';
-import Home from './src/screens/Home';
+import Router from './src/routes/Router';
 
 function App(): JSX.Element {
-  const {isDarkMode, backgroundStyle} = useTheme();
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <Home />
-    </SafeAreaView>
-  );
+  return <Router />;
 }
 
 export default App;
