@@ -26,9 +26,16 @@ Antes de comenzar, asegúrate de tener instalado:
 
 1. **Clonar el repositorio**
 
+SSH
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio-cocktail-explorer.git
-cd tu-repositorio-cocktail-explorer
+git clone git@github.com:mfdevs/cocktail-app.git
+cd cocktail-app
+```
+
+HTTPS
+```bash
+git clone https://github.com/mfdevs/cocktail-app.git
+cd cocktail-app
 ```
 
 2. **Instalar las dependencias**
@@ -45,17 +52,24 @@ yarn
 
 3. **Ejecutar la aplicación 🚀**
 
-Asegúrate de tener un emulador corriendo o un dispositivo conectado y luego ejecuta:
+Para ejecutar la aplicación en tu local deberás contar con dos terminales, donde en la primera ingresarás el siguiente comando:
+
+```bash
+yarn start
+```
+Una vez iniciado, en la segunda terminal ingresarás el siguiente comando:
 
 Para Android:
 ```bash
-npx react-native run-android
+yarn android
 ```
 
 Para iOS:
 ```bash
-npx react-native run-ios
+yarn ios
 ```
+
+Se desplegará el emulador donde podrás visualizar la app e interactuar con ella 🤓
 
 ## Estructura del Proyecto 📁
 
@@ -69,7 +83,7 @@ El proyecto sigue las mejores prácticas de desarrollo y clean code, estructurad
 
 ## Contribuir 🖇️
 
-Si estás interesado en contribuir al proyecto, ¡tu ayuda es bienvenida! Proximamente, actualizaremos el `CONTRIBUTING.md` para más detalles sobre nuestro código de conducta, y el proceso para enviarnos pull requests.
+Si estás interesado en contribuir al proyecto, ¡tu ayuda es bienvenida! Proximamente actualizaremos el `CONTRIBUTING.md` con los detalles sobre nuestro código de conducta, y el proceso para enviarnos pull requests.
 
 ## Licencia 📄
 
